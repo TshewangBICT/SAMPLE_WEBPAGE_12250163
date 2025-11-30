@@ -31,14 +31,14 @@ h1, h2, h3
 h2
 { font-size: 160%;
   padding: 9px 0 5px 0;
-  color: #009FBC;}
+  color: #2C3E50;}
 
 h3
 { font-size: 140%;
   padding: 5px 0 0 0;}
 
 h4, h6
-{ color: #009FBC;
+{ color: #2C3E50;
   padding: 0 0 5px 0;
   font: normal 110% arial;
   text-transform: uppercase;}
@@ -52,7 +52,7 @@ h5, h6
 a, a:hover
 { outline: none;
   text-decoration: underline;
-  color: #AEB002;}
+  color: #2C3E50;}
 
 a:hover
 { text-decoration: none;}
@@ -98,8 +98,9 @@ ol li
   margin-right: auto;}
 
 #header
-{ background: #323534 url(back.png) repeat-x;
-  height: 177px;}
+{ background: #2C3E50;
+  border-bottom: 1px solid #34495E;
+  height: 186px;}
   
 #banner
 {  background: transparent url(banner.jpg) no-repeat;
@@ -112,7 +113,7 @@ ol li
 { width: 880px;
   position: relative;
   height: 140px;
-  background: transparent;}
+  background: #2C3E50;}
 
 #logo #logo_text 
 { position: absolute; 
@@ -132,19 +133,22 @@ ol li
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #E4EC04;}
+{ color: #3498DB;}
 
 #logo_text a:hover .logo_colour
-{ color: #FFF;}
+{ color: #3498DB;}
 
 #logo_text h2
 { font-size: 120%;
   padding: 4px 0 0 0;
-  color: #999;}
+  color: #ECF0F1;}
 
 #menubar
-{ width: 880px;
-  height: 46px;} 
+{ width: 872px;
+  height: 45px;
+  padding-right: 8px;
+  background: #34495E;
+  border-top: 1px solid #2C3E50;} 
 
 ul#menu
 { float: right;
@@ -154,34 +158,34 @@ ul#menu li
 { float: left;
   padding: 0 0 0 9px;
   list-style: none;
-  margin: 1px 2px 0 0;
-  background: #5A5A5A url(tab.png) no-repeat 0 0;}
+  margin: 8px 4px 0 4px;}
 
 ul#menu li a
 { font: normal 100% 'trebuchet ms', sans-serif;
   display: block; 
   float: left; 
   height: 20px;
-  padding: 6px 35px 5px 28px;
+  padding: 6px 20px 5px 20px;
   text-align: center;
   color: #FFF;
   text-decoration: none;
-  background: #5A5A5A url(tab.png) no-repeat 100% 0;} 
+  background: #3498DB;} 
 
 ul#menu li.selected a
 { height: 20px;
-  padding: 6px 35px 5px 28px;}
+  padding: 6px 20px 5px 11px;}
 
 ul#menu li.selected
-{ margin: 1px 2px 0 0;
-  background: #00C6F0 url(tab_selected.png) no-repeat 0 0;}
+{ margin: 8px 4px 0 13px;
+  background: #2980B9;}
 
 ul#menu li.selected a, ul#menu li.selected a:hover
-{ background: #00C6F0 url(tab_selected.png) no-repeat 100% 0;
+{ background: #2980B9;
   color: #FFF;}
 
 ul#menu li a:hover
-{ color: #E4EC04;}
+{ color: #3498DB;
+  background: #ECF0F1;}
 
 #site_content
 { width: 880px;
@@ -190,18 +194,18 @@ ul#menu li a:hover
   padding: 0 0 10px 0;} 
 
 #sidebar_container
-{ float: right;
+{ float: left;
   width: 224px;}
 
 .sidebar_top
 { width: 222px;
   height: 14px;
-  background: transparent url(side_top.png) no-repeat;}
+  background: #3498DB;}
 
 .sidebar_base
 { width: 222px;
   height: 14px;
-  background: url(side_base.png) no-repeat;}
+  background: #2980B9;}
 
 .sidebar
 { float: right;
@@ -210,12 +214,13 @@ ul#menu li a:hover
   margin: 0 0 16px 0;}
 
 .sidebar_item
-{ background: url(side_back.png) repeat-y;
+{ background: #ECF0F1;
   padding: 0 15px;
-  width: 192px;}
+  width: 192px;
+  border-left: 3px solid #3498DB;}
 
 .sidebar li a.selected
-{ color: #444;} 
+{ color: #2C3E50;} 
 
 .sidebar ul
 { margin: 0;} 
@@ -224,7 +229,7 @@ ul#menu li a:hover
 { text-align: left;
   width: 620px;
   padding: 0 0 0 5px;
-  float: left;}
+  float: right;}
   
 #content ul
 { margin: 2px 0 22px 0px;}
@@ -243,19 +248,20 @@ ul#menu li a:hover
   height: 80px;
   padding: 28px 0 5px 0;
   text-align: center; 
-  background: #3B3939 url(footer.png) repeat-x;
-  color: #A8AA94;}
+  background: #2C3E50;
+  border-top: 2px solid #34495E;
+  color: #FFF;}
 
 #footer p
 { line-height: 1.7em;
   padding: 0 0 10px 0;}
 
 #footer a
-{ color: #A8AA94;
+{ color: #FFF;
   text-decoration: none;}
 
 #footer a:hover
-{ color: #FFF;
+{ color: #3498DB;
   text-decoration: none;}
 
 .search
@@ -292,7 +298,7 @@ ul#menu li a:hover
   height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer; 
-  background: #3B3B3B; 
+  background: #3498DB; 
   color: #FFF;}
 
 .form_settings textarea, .form_settings select
@@ -320,12 +326,31 @@ table
 { margin: 10px 0 30px 0;}
 
 table tr th, table tr td
-{ background: #3B3B3B;
+{ background: #3498DB;
   color: #FFF;
   padding: 7px 4px;
   text-align: left;}
   
 table tr td
-{ background: #E5E5DB;
-  color: #47433F;
+{ background: #ECF0F1;
+  color: #2C3E50;
   border-top: 1px solid #FFF;}
+
+.test-info {
+  background: #ECF0F1;
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 4px solid #3498DB;
+}
+
+.deadline {
+  color: #E74C3C;
+  font-weight: bold;
+}
+
+.instructions {
+  background: #FFF8E1;
+  padding: 15px;
+  border: 1px solid #FFE082;
+  margin: 15px 0;
+}
